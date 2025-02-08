@@ -1,72 +1,82 @@
-<html lang="fr"><head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="icon" type="image/png" href="./public/img/favicon.png">
-    <link rel="stylesheet" href="./public/css/styles.css">
-    <link rel="stylesheet" href="./public/css/responsive.css">
-    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script><style type="text/css" id="operaUserStyle"></style>
+   <base href="https://www.escape-game-en-ligne.planetexperiences.fr/" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <link rel="icon" type="image/png" href="./public/img/favicon.png">
+   <link rel="stylesheet" href="./public/css/styles.css">
+   <link rel="stylesheet" href="./public/css/responsive.css">
+   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 
- <body>
- 
-   <nav class="main-nav navbar navbar-inverse navbar-fixed-top">
-       <div class="container">
-         <div class="navbar-header">
- 
-           <!--a class="navbar-brand" href="#">Home</a-->
-         </div>
-         <div id="navbar" class="navbar-collapse collapse">
- 
-             <ul class="nav navbar-nav">
- 
-             <li><a href="https://nicolasdelmas.github.io">Créer un compte</a></li><li><a href="https://nicolasdelmas.github.io">Se connecter</a></li>              
-           </ul>
-         </div>
-       </div>
-   </nav>
- 
-   <section class="sections enquête_jeu_Accueil">
-     <div class="container-accueil">
-       <div class="row">
-         <div class="col-lg-2 col-md-1"> 
-         </div>
- 
-         <div class="col-lg-8 col-md-10 no-rpadding">
-              <div class="pe-content">
-                <div class="tarifs">
- 
-                  <h1 style="color:#f69222;">identification</h1> <br> <br>
- 
-                  
-                  <p>Attention,<br> <br>
-                  Pour jouer en équipe,<br>
-                  un seul compte est nécessaire (vous devrez donc partager les accès entre les joueurs).<br>
-                  Entrez ensuite le code lorsqu'on vous le demandera et vous pourrez alors jouer tous ensemble.<br> <br></p>
- 
-                  <form action="public/inc/Login.inc.php" method="POST">
-                    <label for="UID">Veuillez entrer votre nom d'utilisateur ou votre email : </label><br> <br>
-                    <input type="text" name="UID" placeholder="Nom d'utilisateur ou Email"><br> <br>
-                    <label for="UID">Et votre mot de passe : </label><br> <br>
-                    <input type="password" name="Pwd" placeholder="Mot de passe"><br> <br>
-                    <button style="background-color: #f69222;" type="submit" name="Envoyer">S'identifier</button><br> <br>
- 
-                  </form>
- 
-                  <a href="page2.html">Je n'ai pas encore de compte</a><br> <br>
- 
-                  <a href="https://nicolasdelmas.github.io">Mot de passe oublié ???</a><br> <br>
- 
-                  <iframe src="https://giphy.com/embed/I8RMi1UY8cEKs" width="480" height="274" frameborder="0" class="giphy-embed desktop-only"></iframe><p>
-                  </p><div style="width:100%;height:100%;padding-bottom:30%;position:relative;"><iframe src="https://giphy.com/embed/I8RMi1UY8cEKs" width="100%" height="100%" frameborder="0" class="giphy-embed mobile-only"></iframe></div>
- 
-                 </div>
-               </div>
-              </div>
-           </div>
+ </head>
+
+<body>
+  <nav class="main-nav navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav">
+
+            <li><a href="Pages/Page2.html">Enlèvement au Jumping Internationnal de Chantilly</a></li>             
+          </ul>
+
+        </div>
       </div>
-  </section>
+  </nav>
+
+  <section class="sections enquête_jeu_Accueil">
+    <div class="container-accueil">
+      <div class="row">
+        <div class="col-lg-2 col-md-1">
+
+          <div class="breadcrumbs">
+            <a href="https://www.planetexperiences.fr/" target="_blank"><img src="Images/Button/Ampoule_indice_no_bg.png" class="img-responsive"></a>
+          </div>
+
+        </div>
+
+        <div class="col-lg-8 col-md-10 no-rpadding">
+             <div class="pe-content">
+               <div class="tarifs">
+
+                 <h1 style="color:#f69222;">S'enregistrer</h1> <br> <br>
+
+                 <p>Attention,<br> <br>
+                 Pour jouer en équipe,<br>
+                 un seul compte est nécessaire (vous devrez donc partager les accès entre les joueurs).<br>
+                 Entrez ensuite le code lorsqu'on vous le demandera et vous pourrez alors jouer tous ensemble.<br> <br></p>
+
+                 <form action="public/inc/Signup.inc.php" method="POST">
+                   <label for="Mail">Veuillez entrer votre email : </label><br> <br>
+                   <input type="text" name="Mail" placeholder="Email..."><br> <br>
+                   <label for="UID">Veuillez choisir un nom d'utilisateur : </label><br> <br>
+                   <input type="text" name="UID" placeholder="Nom d'utilisateur..."><br> <br>
+                   <label for="Pwd">Veuillez choisir un mot de passe : </label><br> <br>
+                   <input type="password" name="Pwd" placeholder="Mot de passe..."><br> <br>
+                   <label for="PwdRepeat">Répétez votre mot de passe : </label><br> <br>
+                   <input type="password" name="PwdRepeat" placeholder="Mot de passe..."><br> <br>
+                   <label for="Envoyer">Cliquez sur le bouton ci-dessous pour valider votre inscription</label><br> <br>
+                   <button  type="submit" style='background-color: #f69222;' name="Envoyer">S'enregister</button><br> <br>
+
+                   
+                    <iframe src="https://giphy.com/embed/3oKIPqZPlKW5otXIS4" width="480" height="362" frameBorder="0" class="giphy-embed desktop-only"></iframe>
+                    <div style="width:100%;height:100%;padding-bottom:30%;position:relative;"><iframe src="https://giphy.com/embed/3oKIPqZPlKW5otXIS4" width="100%" height="100%" frameBorder="0" class="giphy-embed mobile-only"></iframe></div>
+
+
+                 </form>
+                </div>
+              </div>
+             </div>
+          </div>
+     </div>
+
+ </section>
  
- 
- </body></html>
+</body>
+</html>
