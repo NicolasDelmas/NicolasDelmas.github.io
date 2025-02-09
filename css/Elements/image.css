@@ -3,11 +3,14 @@
     margin-left: auto;
     margin-right: auto;
     height: auto;
+}
+
+.transform {
     opacity: 0.8;
     transition: transform 0.1s;
 }
 
-.image:hover{
+.transform:hover{
     transform: scale(1.15);
     opacity: 1;
 }
@@ -29,5 +32,10 @@
     display: block;
     margin: 0 auto;
     width:auto;
+    height: auto;
+}
+
+.place_image {
+    max-width: 70%;
     height: auto;
 }
