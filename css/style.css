@@ -17,6 +17,7 @@ body {
     font-weight: 0;
     font-family: 'Michroma', sans-serif;
     padding: 0% 10%;
+    text-align: justify;
 }
 
 .flex-parent-element {
