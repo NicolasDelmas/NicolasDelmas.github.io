@@ -1,16 +1,23 @@
-#hint_image{
+.image{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width:80%;
     height: auto;
     opacity: 0.8;
     transition: transform 0.1s;
 }
 
-#hint_image:hover{
+.image:hover{
     transform: scale(1.15);
     opacity: 1;
+}
+
+.hint_image{
+    width:80%;
+}
+
+.start_image{
+    width:40%;
 }
 
 .flex-button {
