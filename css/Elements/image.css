@@ -1,0 +1,26 @@
+#hint_image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    height: auto;
+    opacity: 0.8;
+    transition: transform 0.1s;
+}
+
+#hint_image:hover{
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+.flex-button {
+    flex:0.15;
+}
+
+.gif{
+    padding:10% 0;
+    display: block;
+    margin: 0 auto;
+    width:auto;
+    height: auto;
+}

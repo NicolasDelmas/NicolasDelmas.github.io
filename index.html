@@ -1,82 +1,45 @@
 <!DOCTYPE html>
 <html lang="fr">
  <head>
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-   <base href="https://www.escape-game-en-ligne.planetexperiences.fr/" />
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-   <link rel="icon" type="image/png" href="./public/img/favicon.png">
-   <link rel="stylesheet" href="./public/css/styles.css">
-   <link rel="stylesheet" href="./public/css/responsive.css">
-   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-
+  <meta charset="utf-8">
+  <link href='css/style.css' rel='stylesheet'>
+  <link href='css/Elements/top_nav.css' rel='stylesheet'>
+  <link href='css/Elements/image.css' rel='stylesheet'>
+  <link href='css/style.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Michroma" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald" rel="stylesheet">
  </head>
 
-<body>
-  <nav class="main-nav navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
+ <body>
+  <div class="topnav">
+    <a href="Pages/Page2.html">Enlèvement au Jumping Internationnal de Chantilly</a>
+  </div>
+
+  <div class="flex-parent-element">
+    <div class="flex-button">
+      <a href="Pages/Indice.html"><img src="Images/Button/Ampoule_indice_no_bg.png" id="hint_image"></a>
+    </div>
+
+    <div class="content">
+      <div>
+        <br> <h1 class="title">Accueil</h1> <br>
+        <div class="text">
+          <p>
+            JOUABILITÉ<br> <br>
+            Au cours de cette enquête tu sera amenée à te déplacer dans différents lieux.
+            Pour cela, clique sur les boutons "LIEU" en bas de ton écran.<br><br><br>
+            
+            AVERTISSEMENT<br> <br>
+            Ce jeu a été pensé pour toi et est reservé explisivement à un usage personnel.
+            Merci d'y jouer seule et de ne pas partager le lien sans le consentement du créateur de ce jeu. <br><br>
+            </p>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
 
-            <ul class="nav navbar-nav">
-
-            <li><a href="Pages/Page2.html">Enlèvement au Jumping Internationnal de Chantilly</a></li>             
-          </ul>
-
-        </div>
+        <img src="Images/Running_horse_gif.webp" frameBorder="0" class="gif"></img>
       </div>
-  </nav>
+    </div>
+  </div>
 
-  <section class="sections enquête_jeu_Accueil">
-    <div class="container-accueil">
-      <div class="row">
-        <div class="col-lg-2 col-md-1">
-
-          <div class="breadcrumbs">
-            <a href="https://www.planetexperiences.fr/" target="_blank"><img src="Images/Button/Ampoule_indice_no_bg.png" class="img-responsive"></a>
-          </div>
-
-        </div>
-
-        <div class="col-lg-8 col-md-10 no-rpadding">
-             <div class="pe-content">
-               <div class="tarifs">
-
-                 <h1 style="color:#f69222;">S'enregistrer</h1> <br> <br>
-
-                 <p>Attention,<br> <br>
-                 Pour jouer en équipe,<br>
-                 un seul compte est nécessaire (vous devrez donc partager les accès entre les joueurs).<br>
-                 Entrez ensuite le code lorsqu'on vous le demandera et vous pourrez alors jouer tous ensemble.<br> <br></p>
-
-                 <form action="public/inc/Signup.inc.php" method="POST">
-                   <label for="Mail">Veuillez entrer votre email : </label><br> <br>
-                   <input type="text" name="Mail" placeholder="Email..."><br> <br>
-                   <label for="UID">Veuillez choisir un nom d'utilisateur : </label><br> <br>
-                   <input type="text" name="UID" placeholder="Nom d'utilisateur..."><br> <br>
-                   <label for="Pwd">Veuillez choisir un mot de passe : </label><br> <br>
-                   <input type="password" name="Pwd" placeholder="Mot de passe..."><br> <br>
-                   <label for="PwdRepeat">Répétez votre mot de passe : </label><br> <br>
-                   <input type="password" name="PwdRepeat" placeholder="Mot de passe..."><br> <br>
-                   <label for="Envoyer">Cliquez sur le bouton ci-dessous pour valider votre inscription</label><br> <br>
-                   <button  type="submit" style='background-color: #f69222;' name="Envoyer">S'enregister</button><br> <br>
-
-                   
-                    <iframe src="https://giphy.com/embed/3oKIPqZPlKW5otXIS4" width="480" height="362" frameBorder="0" class="giphy-embed desktop-only"></iframe>
-                    <div style="width:100%;height:100%;padding-bottom:30%;position:relative;"><iframe src="https://giphy.com/embed/3oKIPqZPlKW5otXIS4" width="100%" height="100%" frameBorder="0" class="giphy-embed mobile-only"></iframe></div>
-
-
-                 </form>
-                </div>
-              </div>
-             </div>
-          </div>
-     </div>
-
- </section>
  
-</body>
+ </body>
 </html>
