@@ -2,12 +2,13 @@
 <html lang="fr">
  <head>
   <meta charset="utf-8">
+  <title>Enlèvement au Jumping Internationnal de Chantilly</title>
   <link href='../css/style.css' rel='stylesheet'>
   <link href='../css/Elements/top_nav.css' rel='stylesheet'>
   <link href='../css/Elements/image.css' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css2?family=Michroma" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Oswald" rel="stylesheet">
-  <link rel="icon" type="image/png" href="../Images/favicon/favicon.ico">
+  <link rel="icon" type="image/png" href="../Images/favicon/favicon-32x32.png" sizes="32x32">
  </head>
 
  <body>
@@ -23,12 +24,25 @@
        <div class="content">
               <div>
                      <h1 class="lieu">Nom du lieu</h1>
-                            <div class="text">
-                                   <p>
-                                    Vous arrivez sur le <span class="place_text">lieu</span>. Voici ce qu'il c'est passé. Devant vous... <br>
-                                    <br><br><br><h1>Ou souhaitez vous aller ?</h1><br>
-                                   </p>
+                     <div class="text">
+                            <p>
+                             Vous arrivez sur le <span class="place_text">lieu</span>.
+                             Voici ce qu'il c'est passé. Devant vous... <br>
+                             <br>
+                             </p>
+
+                             <div class="searchForm">
+                                   <br><h1>Où souhaitez vous aller ?</h1>
+                                   <form id="searchForm">
+                                          <input type="text" id="searchInput" placeholder="Dans quel lieu veux-tu aller">
+                                          <button type="submit" class="searchButton"><img class="searchButtonImage" src="../Images/Button/loupe.png" ></button>
+                                   </form>
                             </div>
+
+                            <div id="response">
+                                   <script src="../index.js"></script>
+                            </div>
+                     </div>
               </div>
        </div>
   </div>

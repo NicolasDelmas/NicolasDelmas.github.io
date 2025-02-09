@@ -2,12 +2,13 @@
 <html lang="fr">
  <head>
   <meta charset="utf-8">
+  <title>Enlèvement au Jumping Internationnal de Chantilly</title>
   <link href='../css/style.css' rel='stylesheet'>
   <link href='../css/Elements/top_nav.css' rel='stylesheet'>
   <link href='../css/Elements/image.css' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css2?family=Michroma" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Oswald" rel="stylesheet">
-  <link rel="icon" type="image/png" href="../Images/favicon/favicon.ico">
+  <link rel="icon" type="image/png" href="../Images/favicon/favicon-32x32.png" sizes="32x32">
  </head>
 
  <body>
@@ -23,24 +24,40 @@
        <div class="content">
               <div>
                      <h1 class="lieu">Entrée du Chateau de Chantilly</h1>
-                            <div class="text">
-                                   <p>
-                                    Vous arrivez au Chateau de Chantilly.
-                                    C'est ici qu'a été apperçu pour la dernière fois la monture de Simon Delestre.
-                                   </p>
+                     <div class="text">
+                            <p>
+                             Vous arrivez au Chateau de Chantilly.
+                             C'est ici qu'a été apperçu pour la dernière fois la monture de Simon Delestre.
+                            </p>
 
-                                   <img src="../Images/Chantilly_castle_and_stable.jpg"class="image place_image">
-                                   <p>
-                                    Vous arrivez à l'<span class="place_text">entrée du chateau</span> de Chantilly.
-                                    Devant vous se dresse le magnifique chateau connu pour son parc et sa grande collection d'object d'art et de peinture du du XVIème siècle.
-                                    Et sur votre droite vous devinez l'entrée des prestigieuses <span class="place_text">Grande Écuries</span>
-                                    de Chantilly qui font la renommée du parc.
-                                    C'est là qu'a été vu pour la dernière fois le cheval de M. Delestre.
-                                    <br>
-                                    <br><br><br><h1>Ou souhaitez vous aller ?</h1><br>
-                                   </p>
+                            <img src="../Images/Chantilly_castle_and_stable.jpg"class="image place_image">
+                            <p>
+                             Vous arrivez à l'<span class="place_text">entrée du chateau</span> de Chantilly.
+                             Devant vous se dresse le magnifique chateau connu pour son parc et sa grande collection d'object d'art et de peinture du du XVIème siècle.
+                             Et sur votre droite vous devinez l'entrée des prestigieuses <span class="place_text">Grande Écuries</span>
+                             de Chantilly qui font la renommée du parc.
+                             C'est là qu'a été vu pour la dernière fois le cheval de M. Delestre.
+                             <br>
+                            </p>
+
+                            <div class="searchForm">
+                                   <br><h1>Où souhaitez vous aller ?</h1>
+                                   <form id="searchForm">
+                                          <input type="text" id="searchInput" placeholder="Dans quel lieu veux-tu aller">
+                                          <button type="submit" class="searchButton"><img class="searchButtonImage" src="../Images/Button/loupe.png" ></button>
+                                   </form>
                             </div>
+
+
+                            <div id="response">
+                                   <script src="../index.js"></script>
+                            </div>
+                            <br><br><br>
+
+
+                     </div>
               </div>
+
        </div>
   </div>
  </body>

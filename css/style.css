@@ -48,4 +48,38 @@ h1{
 .place_text{
     color:#f69222;
 }
+  
 
+
+.searchForm a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.searchForm input[type=text] {
+    float: center;
+    padding: 6px;
+    border: none;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.searchButton {
+    height:32px;
+    width:32px;
+    border-radius: 10px;
+    padding: 6px;
+}
+
+.searchButtonImage {
+    width: 100%;
+    height: auto;
+}
+
+.searchForm{
+    text-align: center;
+}
