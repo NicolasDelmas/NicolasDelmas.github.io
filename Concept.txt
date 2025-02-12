@@ -4,7 +4,10 @@ Nous somme la veille de la compétition d'un concours international et la montur
 
 Lieux
 -----
-Lieu 1 : lieu de l'enlèvement - Les grandes écuries du chateau de chantilly
+Lieu 1 : L'entrée du Château de Chantilly
+Lieu 2 : Les portes du Chateau
+Lieu 3 : Les grandes écuries du Château de Chantilly (plein de box numérotés)
+         Tableau de correspondance entre les noms de chevaux et le numéro de box
 Lieu 2 : Le Box de Akhénathon
 Lieu X : L'adresse du kangourou à Émancé
 Lieu X : Adresse du Kangourou à Émancé

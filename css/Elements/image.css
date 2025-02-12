@@ -39,3 +39,15 @@
     max-width: 70%;
     height: auto;
 }
+
+.image_puzzle_1{
+    max-width: 100%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.imageForm{
+    margin-left: 5%;
+    margin-bottom: 10%;
+    line-height: 30px;
+}

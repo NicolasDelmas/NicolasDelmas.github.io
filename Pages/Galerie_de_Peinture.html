@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta charset="utf-8">
+  <title>Enlèvement au Jumping Internationnal de Chantilly</title>
+  <link href='../css/style.css' rel='stylesheet'>
+  <link href='../css/Elements/top_nav.css' rel='stylesheet'>
+  <link href='../css/Elements/image.css' rel='stylesheet'>
+  <link href='../css/Elements/button.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Michroma" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../Images/favicon/favicon-32x32.png" sizes="32x32">
+ </head>
+
+ <body>
+  <div class="topnav">
+       <a href="../index.html">Enlèvement au Jumping Internationnal de Chantilly</a>
+  </div>
+     
+  <div class="flex-parent-element">
+       <div class="flex-button">
+              <a href="../Pages/Indices/Indice.html"><img src="../Images/Button/Ampoule_indice_no_bg.png" class="hint_image image"></a>
+       </div>
+     
+       <div class="content">
+              <div>
+                     <h1 class="lieu">Galerie de Peinture</h1>
+                     <div class="text">
+                            <p>
+                             Vous vous rendez dans la mythique <span class="place_text">Galerie de Peinture</span>,
+                             au coeur du musée de Condé.
+                             Au total, près de 85 peintures comme "Le Massacre des Innocents" de Nicolas Poussin ou encore 
+                             "Le Portrait du Cardinal de Richelieu" par Philippe de Champaigne y sont disposés.
+                            </p>
+                            <img src="../Images/Galerie_de_peinture.jpg"class="image place_image">
+                            <p>
+                             Cependant, c'est le mur du fond qui attire votre attention. Cinq petit tableaux sont disposés en quinconce.
+                             Il semble y avoir comme un air de famille entre les tableaux accrochés au mur et le cavalier Simon Delestre.
+                             <br>
+                             <br>
+                            </p>
+
+                            <form class="imageForm">
+                                   <label>
+                                       <input type="radio" name="dam" value="dam1" required> Tableau 1
+                                   </label><br>
+                                   <label>
+                                       <input type="radio" name="dam" value="dam2"> Tableau 2
+                                   </label><br>
+                                   <label>
+                                       <input type="radio" name="dam" value="dam3"> Tableau 3
+                                   </label><br>
+                                   <label>
+                                       <input type="radio" name="dam" value="dam4"> Tableau 4
+                                   </label><br>
+                                   <label>
+                                       <input type="radio" name="dam" value="dam5"> Tableau 5
+                                   </label><br>
+                                   <button type="button" onclick="displayImage()" class="puzzle_1_button">Valider</button>
+                               </form>
+                               
+                               <div id="imageContainer" class="image_puzzle_1 image">
+                               </div>
+                               <script src="../index.js"></script>
+
+
+                             <div class="searchForm">
+                                   <br><h1>Où souhaitez vous aller ?</h1>
+                                   <form id="searchForm">
+                                          <input type="text" id="searchInput" placeholder="Dans quel lieu veux-tu aller">
+                                          <button type="submit" class="searchButton"><img class="searchButtonImage" src="../Images/Button/loupe.png" ></button>
+                                   </form>
+                            </div>
+
+                            <div id="response">
+                                   <script src="../index.js"></script>
+                            </div>
+                            <br><br><br>
+                     </div>
+              </div>
+       </div>
+  </div>
+ </body>
+</html>
