@@ -1,3 +1,4 @@
+
 document.getElementById("searchForm").addEventListener("submit", function(event) {
     event.preventDefault();
     var query = document.getElementById("searchInput").value.toLowerCase();
@@ -16,7 +17,7 @@ document.getElementById("searchForm").addEventListener("submit", function(event)
             break;
 
         case "grande écuries":
-            window.location.href = "../Pages/Chateau_de_Chantilly.html";
+            window.location.href = "../Pages/Grandes_Écuries.html";
             break;
         default:
             document.getElementById("response").innerHTML = "le lieu "+ query.toUpperCase() +" n'existe pas.";
@@ -34,4 +35,39 @@ function displayImage() {
     img.src = `../Images/Enigme/1_Nom_du_cheval/${selectedImage}.jpg`; 
     img.alt = selectedImage;
     imageContainer.appendChild(img);
+}
+
+function displayHorseList1() {
+    const imageContainer = document.getElementById('imageContainer');
+
+    imageContainer.innerHTML = '';
+    const img = document.createElement('img');
+    
+    img.src = `../Images/Enigme/1_Nom_du_cheval/Dam3.jpg`; 
+    imageContainer.appendChild(img);
+}
+
+function displayHorseList1() {
+  document.getElementById("showTable").innerHTML = "TableHere";
+}
+
+
+function displayHorseList() {
+        var customNames = [
+            "Prenom", "Nom", "Charlie", "David", "Eve",
+            "Frank", "Grace", "Hank", "Ivy", "Jack",
+            "Karen", "Leo", "Mia", "Nina", "Oscar",
+            "Pam", "Quinn", "Rick", "Sophia", "Tom"
+        ];
+        var table = document.createElement('table');
+        var nameIndex = 0;
+        for (var i = 0; i < 10; i++) {
+            var row = table.insertRow();
+            for (var j = 0; j < 2; j++) {
+                var cell = row.insertCell();
+                cell.textContent = customNames[nameIndex++];
+            }
+        
+    document.getElementById('showTable').appendChild(table);
+    }
 }

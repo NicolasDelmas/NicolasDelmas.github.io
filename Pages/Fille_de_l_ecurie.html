@@ -7,6 +7,7 @@
   <link href='../css/Elements/top_nav.css' rel='stylesheet'>
   <link href='../css/Elements/image.css' rel='stylesheet'>
   <link href='../css/Elements/button.css' rel='stylesheet'>
+  <link href='../css/Elements/table.css' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css2?family=Michroma" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Oswald" rel="stylesheet">
   <link rel="icon" type="image/png" href="../Images/favicon/favicon-32x32.png" sizes="32x32">
@@ -24,48 +25,45 @@
      
        <div class="content">
               <div>
-                     <h1 class="lieu">Entrée du Chateau de Chantilly</h1>
+                     <h1 class="lieu">Nom du lieu</h1>
                      <div class="text">
                             <p>
-                             Vous arrivez au Chateau de Chantilly.
-                             C'est ici qu'a été apperçu pour la dernière fois la monture de Simon Delestre.
-                            </p>
-
-                            <img src="../Images/Chantilly_castle_and_stable.jpg" class="image place_image">
-                            <p>
-                             Vous arrivez à l'<span class="place_text">entrée du chateau</span> de Chantilly.
-                             Devant vous se dresse le magnifique chateau connu pour son parc et sa grande collection d'objets d'art et sa
-                             <span class="place_text">Galerie de Peinture</span> du XVIème siècle.
-                             En regardant avec attention sur votre droite vous devinez l'entrée des prestigieuses <span class="place_text">Grande Écuries</span>
-                             de Chantilly qui font la renommée du parc.
-                             C'est là qu'a été vu pour la dernière fois le cheval de M. Delestre.
+                             Vous approchez de la <span class="place_text">jeune fille</span> et engagez la conversation...
                              <br>
                              <br>
+                             Bonjour, je m'appelle Cassandre dit-elle un peu impressionée par votre tenue de détective.
+                             Je vis ici depuis que je suis née, il y a 23 ans maintenant.
+                             Le propriétaire du château, le comte de Monte-Cristo m'a embauché 
+                             pour prendre soin de ses chevaux en son absence.
+                             En quoi puis-je vous aidez ?
                              <br>
-                             Au loin vous voyez une <span class="place_text">jeune fille</span> qui semble travailler ici.
-                             <button type="button" onclick="location.href='Fille_de_l_ecurie.html'" class="puzzle_1_button_2">Aller la voir</button>
-                            </p>
+                             <br>
+                             <img src="../Images/Girl_with_datasheet.jpg"class="image place_image">
+                             <br>
+                             Après lui avoir présenté la situation dans laquelle vous vous trouvez, 
+                             elle vous tend une note contenant la liste de tous les chevaux de l'écurie.
+                             <br>
+                             <br>
+                             </p>
+                             <button type="button" onclick="displayHorseList()" class="puzzle_1_button_2">Regarder la liste</button>
+                             
+                             <div id="showTable">
+                                   <script src="../index.js"></script>
+                            </div>
 
 
-                            <br>
-                            <div class="searchForm">
+                            
+                             
+                             <div class="searchForm">
                                    <br><h1>Où souhaitez vous aller ?</h1>
                                    <form id="searchForm">
                                           <input type="text" id="searchInput" placeholder="Dans quel lieu veux-tu aller">
                                           <button type="submit" class="searchButton"><img class="searchButtonImage" src="../Images/Button/loupe.png" ></button>
                                    </form>
                             </div>
-
-
-                            <div id="response">
-                                   <script src="../index.js"></script>
-                            </div>
                             <br><br><br>
-
-
                      </div>
               </div>
-
        </div>
   </div>
  </body>

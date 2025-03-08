@@ -36,7 +36,19 @@
 .puzzle_1_button{
     margin: 10px 0 0 40px;
     border-radius: 15%;
-    color: orange;
-    background-color: #111;
+    color: white;
+    background-color: orange;
     font-family: 'Michroma', sans-serif;
+    padding-bottom: 6px;
+}
+
+.puzzle_1_button_2{
+    border-radius: 15%;
+    color: white;
+    background-color: orange;
+    font-family: 'Michroma', sans-serif;
+    padding-bottom: 6px;
+    text-align: center;
+    display: block;
+    margin: 20px auto
 }

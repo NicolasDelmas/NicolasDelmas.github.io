@@ -32,6 +32,6 @@ Carnet contenant des informations sur Simon Delestre
 
 Énigme X : Supprimé les lettres d'une certaines couleur pour former un mot
 
-
-
+AI tool to generate images
+https://deepai.org/machine-learning-model/text2img
 

@@ -1,0 +1,16 @@
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#showTable {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
