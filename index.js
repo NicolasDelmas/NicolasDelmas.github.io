@@ -53,11 +53,12 @@ function displayHorseList1() {
 
 
 function displayHorseList() {
-        var customNames = [
-            "Prenom", "Nom", "Charlie", "David", "Eve",
-            "Frank", "Grace", "Hank", "Ivy", "Jack",
-            "Karen", "Leo", "Mia", "Nina", "Oscar",
-            "Pam", "Quinn", "Rick", "Sophia", "Tom"
+        
+        var horsesNames = [
+            "Prenom", "Nom", "Jungle", "De Bosquentin", "Hermoso",
+            "Du Theil", "Emotion", "De Belesta", "Sophia", "Tom", 
+            "Akenaton", "Dam", "Ivana", "Rose", "Tee Coeur", "De Fleuriel", "Gibs",
+            "De Diam", "Koh lala", "De Fleuriel", 
         ];
         var table = document.createElement('table');
         var nameIndex = 0;
@@ -65,9 +66,9 @@ function displayHorseList() {
             var row = table.insertRow();
             for (var j = 0; j < 2; j++) {
                 var cell = row.insertCell();
-                cell.textContent = customNames[nameIndex++];
+                cell.textContent = horsesNames[nameIndex++];
             }
-        
+    
     document.getElementById('showTable').appendChild(table);
     }
 }
