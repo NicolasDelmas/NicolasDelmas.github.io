@@ -3,17 +3,13 @@ function searchPlace(){
         event.preventDefault();
         var query = document.getElementById("searchInput").value.toLowerCase();
     
-        switch (query) {
-            case "accueil":
-                window.location.href = "../index.html";
-                break;
-                
+        switch (query) {                
             case "entrée du chateau":
                 window.location.href = "../Pages/Chateau_de_Chantilly.html";
                 break;
     
-            case "galerie de peinture":
-                window.location.href = "../Pages/Galerie_de_Peinture.html";
+            case "galerie de peintures":
+                window.location.href = "../Pages/Galerie_de_Peintures.html";
                 break;
     
             case "grande écuries":
@@ -22,6 +18,10 @@ function searchPlace(){
     
             case "box de akenaton":
                 window.location.href = "../Pages/Box_de_Akenaton.html";
+                break;
+
+            case "aldi":
+                window.location.href = "../Pages/Supermarche.html";
                 break;
             default:
                 document.getElementById("response").innerHTML = "le lieu "+ query.toUpperCase() +" n'existe pas.";
@@ -45,14 +45,45 @@ function inspectBox(){
     
             case "foin":
             case "paille":
-                document.getElementById("inspectResponse").innerHTML = '<br>Vous fouillez dans le foin étalé par terre sans trop savoir ce que vous chercher mais vous tomber sur une lettre.<button id="display-letter-button" class="puzzle_1_button_2" onclick="showImage()">Voir la lettre</button>';
+                document.getElementById("inspectResponse").innerHTML = '<br>Vous fouillez dans le foin étalé par terre sans trop savoir ce que vous chercher mais vous tomber sur une lettre.<button class="puzzle_1_button_2" onclick="displayLetter()">Voir la lettre</button>';
                 break;
             case "sang":
-                document.getElementById("inspectResponse").innerHTML = "Autant de sang dans ce box... il y a du y avoir du grabuge ! Mais-est-ce sang d'Akenaton ou du voleur ? Ou bien de quelqu'un d'autre qui aurait surpris le voleur en plein méfait...";
+                document.getElementById("inspectResponse").innerHTML = "<br>Autant de sang dans ce box... il y a du y avoir du grabuge ! Mais-est-ce sang d'Akenaton ou du voleur ? Ou bien de quelqu'un d'autre qui aurait surpris le voleur en plein méfait...";
                 break;
 
             default:
                 document.getElementById("inspectResponse").innerHTML = "<br>Après analyse, il semblerait qu'il n'y ait rien à voir ici";
+        }
+    });
+}
+
+function searchHint(){
+    document.getElementById("searchForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        var query = document.getElementById("searchInput").value.toLowerCase();
+    
+        switch (query) {
+            case "1":
+                window.location.href = "../Indices/Hint_1.html";
+                break;
+    
+            case "galerie de peintures":
+                window.location.href = "../Pages/Galerie_de_Peintures.html";
+                break;
+    
+            case "grande écuries":
+                window.location.href = "../Pages/Grandes_Écuries.html";
+                break;
+    
+            case "box de akenaton":
+                window.location.href = "../Pages/Box_de_Akenaton.html";
+                break;
+
+            case "aldi":
+                window.location.href = "../Pages/Supermarche.html";
+                break;
+            default:
+                document.getElementById("response").innerHTML = "le lieu "+ query.toUpperCase() +" n'existe pas.";
         }
     });
 }
