@@ -22,46 +22,48 @@
        <div class="flex-button">
               <a href="../Pages/Indices/Indice.html"><img src="../Images/Button/Ampoule_indice_no_bg.png" class="hint_image image"></a>
        </div>
-     
+    
        <div class="content">
               <div>
-                     <h1 class="lieu">Nom du lieu</h1>
+                     <h1 class="lieu">Cassandre</h1>
                      <div class="text">
                             <p>
-                             Vous approchez de la <span class="place_text">jeune fille</span> et engagez la conversation...
-                             <br>
-                             <br>
-                             Bonjour, je m'appelle Cassandre dit-elle un peu impressionée par votre tenue de détective.
-                             Je vis ici depuis que je suis née, il y a 23 ans maintenant.
-                             Le propriétaire du château, le comte de Monte-Cristo m'a embauché 
-                             pour prendre soin de ses chevaux en son absence.
-                             En quoi puis-je vous aidez ?
-                             <br>
-                             <br>
-                             <img src="../Images/Girl_with_datasheet.jpg"class="image place_image">
-                             <br>
-                             Après lui avoir présenté la situation dans laquelle vous vous trouvez, 
-                             elle vous tend une note contenant la liste de tous les chevaux de l'écurie.
-                             Aussi, elle vous explique que la famille Simon est une grande lignée, ayant autre fois habité dans le château.
-                             
-                             <br>
-                             <br>
-                             </p>
-                             <button type="button" onclick="displayHorseList(); this.onclick=null;" class="puzzle_1_button_2">Regarder la liste</button>
-                             
-                             <div id="showTable">
+                                   Vous approchez de la <span class="place_text">jeune fille</span> et engagez la conversation...
+                                   <br>
+                                   <br>
+                                   Bonjour, je m'appelle Cassandre dit-elle un peu impressionée par votre tenue de détective.
+                                   Je vis ici depuis que je suis née, il y a 23 ans maintenant.
+                                   Le propriétaire du château, le comte de Monte-Cristo m'a embauché 
+                                   pour prendre soin de ses chevaux en son absence.
+                                   En quoi puis-je vous aidez ?
+                                   <br>
+                                   <br>
+                                   <img src="../Images/Girl_with_datasheet.jpg"class="image place_image">
+                                   <br>
+                                   Après lui avoir présenté la situation dans laquelle vous vous trouvez, 
+                                   elle vous tend une note contenant la liste de tous les chevaux de l'écurie.
+                                   Aussi, elle vous explique que la famille Simon est une grande lignée
+                                   ayant autre fois habitée dans le château.
+                                   Toutes les montures de la famille portent le long d'un de leur ancêtres.
+                                   <br>
+                                   <br>
+                            </p>
+
+                            <button type="button" onclick="displayHorseList()" class="puzzle_1_button_2">Regarder la liste</button>
+                            <div id="showTable">
                                    <script src="../index.js"></script>
                             </div>
 
-
-                            
-                             
-                             <div class="searchForm">
+                            <div class="searchForm">
                                    <br><h1>Où souhaitez vous aller ?</h1>
                                    <form id="searchForm">
                                           <input type="text" id="searchInput" placeholder="Dans quel lieu veux-tu aller">
                                           <button type="submit" class="searchButton"><img class="searchButtonImage" src="../Images/Button/loupe.png" ></button>
                                    </form>
+                            </div>
+
+                            <div id="response">
+                                   <script src="../index.js"></script>
                             </div>
                             <br><br><br>
                      </div>

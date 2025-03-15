@@ -6,8 +6,8 @@
   <link href='../css/style.css' rel='stylesheet'>
   <link href='../css/Elements/top_nav.css' rel='stylesheet'>
   <link href='../css/Elements/image.css' rel='stylesheet'>
-  <link href='../css/Elements/image.css' rel='stylesheet'>
   <link href='../css/Elements/button.css' rel='stylesheet'>
+  <link href='../css/Elements/table.css' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css2?family=Michroma" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Oswald" rel="stylesheet">
   <link rel="icon" type="image/png" href="../Images/favicon/favicon-32x32.png" sizes="32x32">
@@ -25,26 +25,17 @@
      
        <div class="content">
               <div>
-                     <h1 class="lieu">Grandes Écuries</h1>
+                     <h1 class="lieu">Box de Akenaton</h1>
                      <div class="text">
                             <p>
-                             Vous arrivez dans les <span class="place_text">Grandes Écuries</span>du chateau.
-                             Des dizaines et des dizaines de box se succèdent.
-                             C'est ici qu'est le box du malheureux cheval disparu. 
-                             Chaque box porte l'inscription du nom du cheval qu'il héberge.
-                             Il y aura surement un indice dans le box du cheval de Simon, 
-                             Rendez-vous là-bas !
+                             Vous traversez l'écurie jusqu'à trouvez le <span class="place_text">Box de Akenaton</span>.
+                             Dehors il s'est mit à pleuvoir et le ciel s'est assombrit.
+                             Vous distingué avec difficulté l'intérieur du box.
+                             Toutefois vous distingué plusieurs élements qui attirent votre attention...
+                             <br>
                              <br>
                              </p>
-                             <img src="../Images/Empty_stables.jpg"class="image place_image">
-                             <p>
-                             Le temps presse, pas le temps de fouiller tous les box.
-                             Pour s'y rendre il suffit d'écrire <span class="place_text">box de Prenom_Du_Cheval</span>
-                             (en remplaçant par ledit nom du cheval) dans la barre de recherche.
-                             Si seulement vous connaissiez le nom de son cheval.<br>
-                             <br>
-                             </p>
-
+                             <img src="../Images/Bloody_stable_hay.jpg"class="image place_image">
                              <div class="searchForm">
                                    <br><h1>Où souhaitez vous aller ?</h1>
                                    <form id="searchForm">
@@ -52,8 +43,13 @@
                                           <button type="submit" class="searchButton"><img class="searchButtonImage" src="../Images/Button/loupe.png" ></button>
                                    </form>
                             </div>
-
-                            <div id="response">
+                            <div class="button_container">
+                                   <button type="button" onclick="displayHorseList()" class="puzzle_1_button_2">Regarder la liste</button>
+                                   <button type="button" onclick="displayHorseList()" class="puzzle_1_button_2">Regarder la liste</button>
+                                   <button type="button" onclick="displayHorseList()" class="puzzle_1_button_2">Regarder la liste</button>
+                            </div>
+                            
+                            <div id="showTable">
                                    <script src="../index.js"></script>
                             </div>
                             <br><br><br>
