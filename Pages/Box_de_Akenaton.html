@@ -27,30 +27,47 @@
               <div>
                      <h1 class="lieu">Box de Akenaton</h1>
                      <div class="text">
+    
                             <p>
                              Vous traversez l'écurie jusqu'à trouvez le <span class="place_text">Box de Akenaton</span>.
                              Dehors il s'est mit à pleuvoir et le ciel s'est assombrit.
                              Vous distingué avec difficulté l'intérieur du box.
                              Toutefois vous distingué plusieurs élements qui attirent votre attention...
-                             <br>
+                             <br><br>
+                             Que souhaitez vous inspecter plus en détail ?
                              <br>
                              </p>
-                             <img src="../Images/Bloody_stable_hay.jpg"class="image place_image">
                              <div class="searchForm">
+                                   <form id="inspectForm">
+                                          <input type="text" id="inspectInput" placeholder="Quel élément souhaitez vous voir ?">
+                                          <button type="submit" class="searchButton" onclick="inspectBox()"><img class="searchButtonImage" src="../Images/Button/loupe.png" ></button>
+                                   </form>
+                            </div>
+                            <div id="inspectResponse">
+                                   <script src="../JavaScript/Searchbar.js"></script>
+                            </div>
+
+                            <img id="letter-img" class="image place_image hide" src="../Images/Enigme/2_Lettre_de_l_enlèvement/Lettre_manuscrite.png">
+                            <script src="../JavaScript/Image.js"></script>
+
+
+                            <br>
+                             <img src="../Images/Bloody_stable_hay.jpg"class="image place_image">
+                            
+                            <div id="showTable">
+                                   <script src="../JavaScript/Énigme.js"></script>
+                            </div>
+                            
+                            <div class="searchForm">
                                    <br><h1>Où souhaitez vous aller ?</h1>
                                    <form id="searchForm">
                                           <input type="text" id="searchInput" placeholder="Dans quel lieu veux-tu aller">
-                                          <button type="submit" class="searchButton"><img class="searchButtonImage" src="../Images/Button/loupe.png" ></button>
+                                          <button type="submit" class="searchButton" onclick="searchPlace()"><img class="searchButtonImage" src="../Images/Button/loupe.png" ></button>
                                    </form>
                             </div>
-                            <div class="button_container">
-                                   <button type="button" onclick="displayHorseList()" class="puzzle_1_button_2">Regarder la liste</button>
-                                   <button type="button" onclick="displayHorseList()" class="puzzle_1_button_2">Regarder la liste</button>
-                                   <button type="button" onclick="displayHorseList()" class="puzzle_1_button_2">Regarder la liste</button>
-                            </div>
-                            
-                            <div id="showTable">
-                                   <script src="../index.js"></script>
+
+                            <div id="response">
+                                   <script src="../JavaScript/Searchbar.js"></script>
                             </div>
                             <br><br><br>
                      </div>
